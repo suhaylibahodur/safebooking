@@ -34,6 +34,24 @@ Route::group(['middleware' => ['jwt.auth']], function () {
   Route::patch('/task/{id}','TaskController@update');
   Route::post('/task/status','TaskController@toggleStatus');
 
+    Route::post('/city','CityController@store');
+    Route::get('/city','CityController@index');
+    Route::delete('/city/{id}','CityController@destroy');
+    Route::get('/city/{id}','CityController@show');
+    Route::patch('/city/{id}','CityController@update');
+
+    Route::post('/room_type','RoomTypeController@store');
+    Route::get('/room_type','RoomTypeController@index');
+    Route::delete('/room_type/{id}','RoomTypeController@destroy');
+    Route::get('/room_type/{id}','RoomTypeController@show');
+    Route::patch('/room_type/{id}','RoomTypeController@update');
+
+    Route::post('/condition','ConditionController@store');
+    Route::get('/condition','ConditionController@index');
+    Route::delete('/condition/{id}','ConditionController@destroy');
+    Route::get('/condition/{id}','ConditionController@show');
+    Route::patch('/condition/{id}','ConditionController@update');
+
     Route::get('/configuration/fetch','ConfigurationController@index');
     Route::post('/configuration','ConfigurationController@store');
 

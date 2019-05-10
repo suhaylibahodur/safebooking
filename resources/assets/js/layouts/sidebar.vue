@@ -26,6 +26,15 @@
                         <router-link to="/task" exact><i class="fa fa-tasks"></i> <span class="hide-menu">Task</span></router-link>
                     </li>
                     <li>
+                        <router-link to="/city" exact><i class="fa fa-list"></i> <span class="hide-menu">Города</span></router-link>
+                    </li>
+                    <li>
+                        <router-link to="/room_type" exact><i class="fa fa-list"></i> <span class="hide-menu">Тип номера</span></router-link>
+                    </li>
+                    <li>
+                        <router-link to="/condition" exact><i class="fa fa-list"></i> <span class="hide-menu">Состояние</span></router-link>
+                    </li>
+                    <li>
                         <router-link to="/anything" exact><i class="fa fa-exclamation-triangle"></i> <span class="hide-menu">Error Page</span></router-link>
                     </li>
                     <li>

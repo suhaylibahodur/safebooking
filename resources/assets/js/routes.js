@@ -36,6 +36,30 @@ let routes = [
                 component: require('./views/task/edit')
             },
             {
+                path: '/city',
+                component: require('./views/city/index')
+            },
+            {
+                path: '/city/:id/edit',
+                component: require('./views/city/edit')
+            },
+            {
+                path: '/room_type',
+                component: require('./views/room_type/index')
+            },
+            {
+                path: '/room_type/:id/edit',
+                component: require('./views/room_type/edit')
+            },
+            {
+                path: '/condition',
+                component: require('./views/condition/index')
+            },
+            {
+                path: '/condition/:id/edit',
+                component: require('./views/condition/edit')
+            },
+            {
                 path: '/user',
                 component: require('./views/user/index')
             },

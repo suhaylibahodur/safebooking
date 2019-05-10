@@ -9,7 +9,6 @@ class TaskController extends Controller
 {
 
 	public function index(){
-        dd("sdfsdf");
 		$tasks = \App\Task::whereNotNull('id');
 
 		if(request()->has('title'))
