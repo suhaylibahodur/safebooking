@@ -63,6 +63,18 @@ let routes = [
                 path: '/user',
                 component: require('./views/user/index')
             },
+            {
+                path: '/room',
+                component: require('./views/room/index')
+            },
+            {
+                path: '/room/create',
+                component: require('./views/room/create')
+            },
+            {
+                path: '/room/:id/edit',
+                component: require('./views/room/edit')
+            },
         ]
     },
     {

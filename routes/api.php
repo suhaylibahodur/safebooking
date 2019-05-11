@@ -40,6 +40,12 @@ Route::group(['middleware' => ['jwt.auth']], function () {
     Route::get('/city/{id}','CityController@show');
     Route::patch('/city/{id}','CityController@update');
 
+    Route::post('/room','RoomController@store');
+    Route::get('/room','RoomController@index');
+    Route::delete('/room/{id}','RoomController@destroy');
+    Route::get('/room/{id}','RoomController@show');
+    Route::patch('/room/{id}','RoomController@update');
+
     Route::post('/room_type','RoomTypeController@store');
     Route::get('/room_type','RoomTypeController@index');
     Route::delete('/room_type/{id}','RoomTypeController@destroy');

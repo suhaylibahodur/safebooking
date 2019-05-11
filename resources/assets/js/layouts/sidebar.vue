@@ -26,6 +26,9 @@
                         <router-link to="/task" exact><i class="fa fa-tasks"></i> <span class="hide-menu">Task</span></router-link>
                     </li>
                     <li>
+                        <router-link to="/room" exact><i class="fa fa-list"></i> <span class="hide-menu">Rooms</span></router-link>
+                    </li>
+                    <li>
                         <router-link to="/city" exact><i class="fa fa-list"></i> <span class="hide-menu">Города</span></router-link>
                     </li>
                     <li>
