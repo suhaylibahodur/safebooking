@@ -46,6 +46,9 @@ Route::group(['middleware' => ['jwt.auth']], function () {
     Route::get('/room/{id}','RoomController@show');
     Route::patch('/room/{id}','RoomController@update');
 
+    Route::post('/images-upload', 'ImagesController@upload');
+    Route::get('/images/by_room_id/{id}','ImagesController@getByRoomId');
+
     Route::post('/room_type','RoomTypeController@store');
     Route::get('/room_type','RoomTypeController@index');
     Route::delete('/room_type/{id}','RoomTypeController@destroy');

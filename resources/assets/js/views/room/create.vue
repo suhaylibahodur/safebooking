@@ -15,7 +15,9 @@
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title">Add new Room</h4>
-                        <room-form></room-form>
+                        <div class="col-md-6">
+                            <room-form></room-form>
+                        </div>
                     </div>
                 </div>
             </div>

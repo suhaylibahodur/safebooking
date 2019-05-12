@@ -1,4 +1,5 @@
 <?php
+    echo "sdfsdf";
     //GET TOKEN
     /*$permissions = [
         'notify', 'friends', 'photos', 'audio', 'video', 'docs', 'notes',
@@ -19,7 +20,7 @@
 
     //TOKEN-VK: 7b66bbc0eb05f4ee19941f5b9e616fd98c84831bbc068d742586969908e6b85584b4cadfb08a67e221445
 
-    /*$metods = [
+    $metods = [
         'search' => 'newsfeed.search',
         'wall' => 'wall.get'
     ];
@@ -27,9 +28,9 @@
 
     $request_params = array(
 //        'q' => $queryText,
-        'owner_id' => '17351736',
+        'owner_id' => '-83556825',
         'count' => 100,
-        'offset' => 100,
+        'offset' => 0,
         'v' => '5.95',
         'access_token' => '7b66bbc0eb05f4ee19941f5b9e616fd98c84831bbc068d742586969908e6b85584b4cadfb08a67e221445'
     );
@@ -55,10 +56,10 @@
     }
 
     function validText($text) {
-        $text = str_replace(array("\n", "\r", ",","(", ")", ".", "?", "!", "#", "–", "—", "»", "«","…","_","\"", "-", ":", "\\", "©"), ' ', $text);
+        $text = str_replace(array("\n", "\r", ",","(", ")", ".", "?", "!", "#", "–", "—", "»", "«","…","_","\"", "-", ":", "\\", "©", "❤", "🤫", "😂", "💔", "✨", "🤦‍♀️", "🔗","📚", "🇰🇿", "😉","😂","👠"), ' ', $text);
         $text = trim($text);
         return $text;
-    }*/
+    }
 
 
 

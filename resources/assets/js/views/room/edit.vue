@@ -16,7 +16,21 @@
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title">Edit Room</h4>
-                        <room-form :id="id"></room-form>
+                        <div class="row justify-content-start float-left col-md-6">
+                            <div class="col-md-12">
+                                <room-form :id="id"></room-form>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-end col-md-6">
+                            <div class="card card-default col-md-12">
+                                <div class="card-header">Добавить картинки</div>
+
+                                <div class="card-body">
+                                    <image-uploader :id="id"></image-uploader>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -26,10 +40,11 @@
 
 <script>
     import RoomForm from './form';
+    import ImageUploader from '../images/image_uploader'
     import helper from '../../services/helper'
 
     export default {
-        components : { RoomForm },
+        components : { RoomForm, ImageUploader },
         data() {
             return {
                 id:this.$route.params.id

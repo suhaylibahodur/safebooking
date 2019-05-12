@@ -51,8 +51,8 @@
         data() {
             return {
                 loginForm: {
-                    email: 'john.doe@example.com',
-                    password: 'abcd1234'
+                    email: 'suhayli@rahmetapp.kz',
+                    password: 'amigo123'
                 }
             }
         },

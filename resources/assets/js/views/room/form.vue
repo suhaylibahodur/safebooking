@@ -1,7 +1,7 @@
 <template>
     <form @submit.prevent="proceed">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12">
                 <div class="form-group">
                     <label for="">Город</label>
                     <select name="pageLength" class="form-control" v-model="roomForm.city_id">
@@ -37,7 +37,6 @@
         <router-link to="/room" class="btn btn-danger waves-effect waves-light m-t-10" v-show="id">Cancel</router-link>
     </form>
 </template>
-
 
 <script>
     import 'vue-range-slider/dist/vue-range-slider.css'
